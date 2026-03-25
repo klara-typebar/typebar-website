@@ -380,6 +380,23 @@
     text-align: center;
   }
 
+  .testimonial-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+
+  .t-tag {
+    background: rgba(0,0,0,0.08);
+    color: rgba(0,0,0,0.6);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    letter-spacing: -0.01em;
+  }
+
+  .card-t.featured .t-tag {
+    background: rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.7);
+  }
+
   /* ─── TESTIMONIALS ─── */
   .testimonials-section {
     padding: 60px 40px 80px;
@@ -1106,7 +1123,11 @@
   <div class="testimonials-block">
     <div class="cards-t">
       <div class="card-t featured">
-        <div class="stars-wrap"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+        <div class="testimonial-tags">
+          <span class="t-tag">Full content audit</span>
+          <span class="t-tag">Channel strategy</span>
+          <span class="t-tag">Content calendar</span>
+        </div>
         <p class="quote-text">Klara brought structure to things I'd been carrying in my head for months. We mapped our entire product offer across relationship life stages, built a growth funnel, and got clarity on our content and newsletter strategy. She asks the right questions and delivers systems our team can apply right away.<br><br>Beyond her expertise, working with Klara is pure joy — proactive, solution-oriented, and a true driver of progress.</p>
         <div class="reviewer">
           <div class="avatar-ph">ER</div>
@@ -1114,19 +1135,23 @@
         </div>
       </div>
       <div class="card-t">
-        <div class="stars-wrap"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
-        <p class="quote-text">We've worked with Klara across multiple projects. From strategy to execution, she's structured, fast, and knows how to turn ideas into something real.</p>
+        <div class="testimonial-tags">
+          <span class="t-tag">Growth funnel</span>
+          <span class="t-tag">Messaging</span>
+          <span class="t-tag">Community launch</span>
+        </div> From strategy to execution, she's structured, fast, and knows how to turn ideas into something real.</p>
         <div class="reviewer">
           <div class="avatar-ph">MK</div>
           <div class="reviewer-info"><span class="reviewer-name">Marian Kameniscak</span><span class="reviewer-role">Founder, Engineering Leaders Community</span></div>
         </div>
       </div>
       <div class="card-t">
-        <div class="stars-wrap"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
-        <p class="quote-text">This workshop was sooooo good. Very practical, actionable, interactive. I learned so much. And best of all I don't feel overwhelmed but actually excited to get started.</p>
+        <div class="testimonial-tags">
+          <span class="t-tag">Newsletter</span>
+        </div> I'm trying to write and create more here, and just for fun, yet my thought pattern can be utterly chaotic when starting new. Your article was very helpful to me in putting things in a more structured way and giving pointers and ideas. Looking forward to learning more!</p>
         <div class="reviewer">
-          <div class="avatar-ph">C</div>
-          <div class="reviewer-info"><span class="reviewer-name">Catherine</span><span class="reviewer-role">Grow Your Brand Online workshop attendee</span></div>
+          <div class="avatar-ph">✦</div>
+          <div class="reviewer-info"><span class="reviewer-name">Typebar newsletter subscriber</span><span class="reviewer-role"></span></div>
         </div>
       </div>
     </div>
